@@ -13,7 +13,6 @@ const StartQuestions = () => {
 
   return (
     <StyledStartQuestions>
-
       <img src={fire} />
       <ShowQuestion data={data} />
       <InputQuestion />
