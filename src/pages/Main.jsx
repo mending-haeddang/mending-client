@@ -6,7 +6,7 @@ import StartQuestions from "../components/main/StartQuestions";
 import styled from "styled-components";
 const Main = () => {
   // const navigate = useNavigate();
-  // const [isStart, setIsStart] = useState(true);
+  // const [isStart, seㅊ tIsStart] = useState(true);
 
   const renderStartView = () => {
     setTimeout(() => {
