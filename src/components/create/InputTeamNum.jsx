@@ -2,12 +2,15 @@ import React from "react";
 import styled from "styled-components";
 import colors from "../../libs/constant/colors";
 
-const InputTeamNum = () => {
+const InputTeamNum = ({ setIsComplete }) => {
+  const handlerClick = () => {
+    setIsComplete(true);
+  };
   return (
     <StyledInputWrap>
       <span>모두 몇 명 인가요?</span>
       <StyledInputNum type="text" placeholder="최소 2명, 최대 5명"></StyledInputNum>
-      <StyledBtn>완료</StyledBtn>
+      <StyledBtn onClick={handlerClick}>완료</StyledBtn>
     </StyledInputWrap>
   );
 };

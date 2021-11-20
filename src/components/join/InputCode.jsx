@@ -2,12 +2,15 @@ import React from "react";
 import styled from "styled-components";
 import colors from "../../libs/constant/colors";
 
-const InputCode = () => {
+const InputCode = ({ setIsComplete }) => {
+  const handlerClick = () => {
+    setIsComplete(true);
+  };
   return (
     <StyledWrap>
       <span>멜팅 코드를 입력해주세요.</span>
       <StyledInput type="text" placeholder="여기에 입력해주세요."></StyledInput>
-      <StyledBtn>완료</StyledBtn>
+      <StyledBtn onClick={handlerClick}>완료</StyledBtn>
     </StyledWrap>
   );
 };

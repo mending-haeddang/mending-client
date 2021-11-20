@@ -3,9 +3,10 @@ import styled from "styled-components";
 import colors from "../../libs/constant/colors.js";
 import { ReactComponent as dot } from "../../assets/icons/dot.svg";
 
-const InputName = ({ userName, setUserName }) => {
+const InputName = ({ userName, setUserName, setIsComplete }) => {
   const handlerSubmit = (e) => {
     e.preventDefault();
+    setIsComplete(true);
   };
 
   const handlerChange = (e) => {
