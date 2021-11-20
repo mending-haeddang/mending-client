@@ -8,7 +8,7 @@
 아이스 브레이킹을 위한 질문과 답변 공간을 제공합니다.
 
 ### 개발 담당 부분
-#### 희선: Intro, Create, Join
+#### 희선: Intro, Create, Join (100%)
 - Intro: 사용자 이름 입력
 ![main_name](https://user-images.githubusercontent.com/70877186/142742868-ee553efc-38b7-49cb-a170-b7f63a6fb0b9.png)
 
@@ -22,7 +22,7 @@
 ![main_melter2](https://user-images.githubusercontent.com/70877186/142742875-3a9e6a21-39e2-4383-b683-51990fd4c378.png)
 
 
-#### 세연: Main
+#### 세연: Main (100%)
 - Main: 3초간 안내 화면
 ![main_start](https://user-images.githubusercontent.com/70877186/142742883-be3d34b8-793d-4a07-836e-615e262182a1.png)
 
@@ -30,7 +30,7 @@
 ![main_input1](https://user-images.githubusercontent.com/70877186/142742885-50f31e3c-3ae6-4297-8fcc-3ec1fdd9b603.png)
 
 
-#### 소희: Result, Ending
+#### 소희: Result, Ending (100%)
 - Result: 해당 질문에 대한 모든 팀원의 답변 확인하기
 ![main_reply](https://user-images.githubusercontent.com/70877186/142742886-ffe97ec4-a83e-4b0a-9f38-166892e1e4aa.png)
 
