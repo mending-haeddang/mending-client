@@ -1,14 +1,22 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router";
 import styled from "styled-components";
 import Active from "../../assets/icons/btn_check_active.svg";
 import InActive from "../../assets/icons/btn_check_inactive.svg";
 const InputQuestion = () => {
   const [isChecked, setIsChecked] = useState(false);
+  const navigate = useNavigate();
+
+  // const { id } = useParams();
+  // let name = id.replace(":", "");
+  // name = parseInt(name, 10);
 
   const handlerSubmit = (e) => {
     e.preventDefault();
     setIsChecked(true);
+    navigate(`/result/0`);
   };
+
   return (
     <StyledInputQuestion onSubmit={(e) => handlerSubmit(e)}>
       <StyledInputWrapper>

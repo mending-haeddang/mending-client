@@ -1,7 +1,11 @@
-import React from "react";
 import styled from "styled-components";
-const ShowQuestion = () => {
-  return <StyledShowQuestion>질문질문질문질문</StyledShowQuestion>;
+import { useParams } from "react-router";
+const ShowQuestion = ({ data }) => {
+  const { id } = useParams();
+  let name = id.replace(":", "");
+  name = parseInt(name, 10);
+  console.log("hi");
+  return <StyledShowQuestion>{data[name].question}</StyledShowQuestion>;
 };
 
 export default ShowQuestion;

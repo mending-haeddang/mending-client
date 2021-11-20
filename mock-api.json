@@ -48,5 +48,19 @@
         "answer": "enfp입니다"
       }
     ]
+  },
+  "teamInfo": {
+    "name": "팀장님",
+    "memberCount": 5
+  },
+  "memberInfo": {
+    "name": "팀원",
+    "teamCode": "DF25SD"
+  },
+  "answer": {
+    "teamID": "0",
+    "userid": 2,
+    "questionID": 0,
+    "answer": ""
   }
 }

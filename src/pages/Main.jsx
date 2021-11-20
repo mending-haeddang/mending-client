@@ -4,24 +4,25 @@ import { useNavigate } from "react-router";
 import StartView from "../components/main/StartView";
 import styled from "styled-components";
 import fire from "../assets/images/fire.gif";
+import { getQuestions } from "../libs/api";
+
 const Main = () => {
   const navigate = useNavigate();
   const [isStart, setIsStart] = useState(true);
 
-  const renderStartView = () => {
+  const renderStartView = (data) => {
     setTimeout(() => {
       setIsStart(false);
-      navigate("./:3");
+      navigate("./:0", { state: data });
     }, 5500);
   };
 
   useEffect(() => {
-    const getMembersInfo = async () => {
-      // const data = await axios.get("aaaa");
-    };
-
-    getMembersInfo();
-    renderStartView();
+    (async () => {
+      const { data } = await getQuestions();
+      console.log(data);
+      renderStartView(data);
+    })();
   }, []);
 
   return (
