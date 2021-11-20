@@ -9,7 +9,7 @@ const InputTeamNum = ({ setIsComplete }) => {
   return (
     <StyledInputWrap>
       <span>모두 몇 명 인가요?</span>
-      <StyledInputNum type="text" placeholder="최소 2명, 최대 5명"></StyledInputNum>
+      <StyledInputNum type="number" placeholder="최소 2명, 최대 5명"></StyledInputNum>
       <StyledBtn onClick={handlerClick}>완료</StyledBtn>
     </StyledInputWrap>
   );
@@ -38,6 +38,11 @@ const StyledInputNum = styled.input`
   text-align: center;
   color: ${colors.subText};
   font-size: 24px;
+  ::-webkit-outer-spin-button,
+  ::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
 `;
 const StyledBtn = styled.button`
   width: 96px;

@@ -88,6 +88,7 @@ const StyledCompleteBtn = styled.button`
   color: black;
   font-size: 24px;
   font-weight: bold;
+  margin-bottom: 138px;
 `;
 
 const StyledDotImg = styled(dot)`

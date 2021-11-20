@@ -33,6 +33,7 @@ const StyledChooseWrap = styled.div`
   align-items: center;
   flex-direction: column;
   color: ${colors.subText};
+  margin-top: 314px;
   gap: 40px;
   & > span {
     font-size: 40px;
