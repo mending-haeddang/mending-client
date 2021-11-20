@@ -17,7 +17,6 @@ export default StartQuestions;
 const StyledStartQuestions = styled.div`
   width: 100vw;
   height: calc(100vh - 220px);
-  background-color: black;
   display: flex;
   flex-direction: column;
   align-items: center;

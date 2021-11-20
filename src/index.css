@@ -19,7 +19,9 @@ body,
   height: 100%;
   font-family: "Spoqa Han Sans Neo";
   font-weight: bold;
-  background-color: black;
+  background-image: url("./assets/images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 p {

@@ -39,7 +39,6 @@ export default Main;
 const StyledMain = styled.div`
   width: 100vw;
   height: calc(100vh - 220px);
-  background-color: black;
   color: white;
   display: flex;
   justify-content: center;

@@ -14,7 +14,6 @@ const StyledHeader = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
   img {
     width: 180px;
     height: 80px;
