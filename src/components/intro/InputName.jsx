@@ -72,7 +72,7 @@ const StyledInputField = styled.input`
   border-radius: 50px;
   outline: 0;
   border: 2px solid ${colors.subText};
-  background-color: ${colors.main};
+  background-color: #00000000;
   margin-top: 12px;
   text-align: center;
   color: ${colors.subText};

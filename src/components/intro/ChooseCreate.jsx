@@ -33,7 +33,6 @@ const StyledChooseWrap = styled.div`
   align-items: center;
   flex-direction: column;
   color: ${colors.subText};
-  margin-top: 314px;
   gap: 40px;
   & > span {
     font-size: 40px;
@@ -63,7 +62,7 @@ const StyledBtn = styled.div`
   height: 65px;
   border-radius: 50px;
   border: 3px solid ${colors.subText};
-  background-color: ${colors.main};
+  background-color: #00000000;
   color: ${colors.subText};
   font-size: 40px;
   line-height: 65px;
