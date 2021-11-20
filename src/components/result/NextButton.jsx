@@ -1,8 +1,10 @@
 import React from "react";
 import styled from "styled-components";
+import { useNavigate } from "react-router-dom";
 
 const NextButton = () => {
-  return <StyledNextButton>다음 질문</StyledNextButton>;
+  const navigate = useNavigate();
+  return <StyledNextButton onClick={() => navigate("/ending")}>다음 질문</StyledNextButton>;
 };
 
 const StyledNextButton = styled.button`
@@ -26,6 +28,9 @@ const StyledNextButton = styled.button`
     }
   }
   animation: fadeButton 0.6s;
+  &:hover {
+    cursor: pointer;
+  }elop
 `;
 
 export default NextButton;
