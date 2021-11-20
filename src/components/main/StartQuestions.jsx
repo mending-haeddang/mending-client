@@ -2,11 +2,16 @@ import React from "react";
 import styled from "styled-components";
 import ShowQuestion from "./ShowQuestion";
 import InputQuestion from "./InputQuestion";
+import { useLocation } from "react-router-dom";
 //프롭으로 데이터 받는다
 const StartQuestions = () => {
+  const location = useLocation();
+
+  const data = location.state?.data;
+
   return (
     <StyledStartQuestions>
-      <ShowQuestion />
+      <ShowQuestion data={data} />
       <InputQuestion />
     </StyledStartQuestions>
   );
