@@ -14,7 +14,7 @@ const StyledNextButton = styled.button`
   border-radius: 23px;
   font-weight: bold;
   font-size: 24px;
-  margin-bottom: 121px;
+  margin-bottom: 100px;
   font-family: "Spoqa Han Sans Neo";
 `;
 
