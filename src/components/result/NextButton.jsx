@@ -19,6 +19,16 @@ const StyledNextButton = styled.button`
   margin-bottom: 100px;
   font-family: "Spoqa Han Sans Neo";
   z-index: 2;
+
+  @keyframes fadeButton {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  animation: fadeButton 0.6s;
   &:hover {
     cursor: pointer;
   }
