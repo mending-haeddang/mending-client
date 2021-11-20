@@ -9,7 +9,7 @@ const Header = () => {
   );
 };
 const StyledHeader = styled.div`
-  width: 100vw;
+  width: 98vw;
   height: 220px;
   display: flex;
   justify-content: center;

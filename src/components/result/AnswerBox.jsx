@@ -27,8 +27,8 @@ const StyledAnswerBox = styled.div`
   animation-fill-mode: backwards;
   position: absolute;
   z-index: ${(props) => props.index}px;
-  left: ${(props) => props.pos.x}px;
-  top: ${(props) => props.pos.y}px;
+  margin-left: ${(props) => props.pos.x}px;
+  margin-top: ${(props) => props.pos.y}px;
   p {
     margin: 0 60px;
   }
