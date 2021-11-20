@@ -1,7 +1,12 @@
 import React from "react";
+import CopyButton from "../components/common/CopyButton";
 
 const Home = () => {
-  return <h1>솝커톤 10조 화이팅!</h1>;
+  return (
+    <>
+      <CopyButton text="asdfas" />
+    </>
+  );
 };
 
 export default Home;
