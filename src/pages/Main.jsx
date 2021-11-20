@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 // import axios from "axios";
 import { Routes, Route, useNavigate } from "react-router";
 import StartView from "../components/main/StartView";
-import StartQuestions from "../components/main/StartQuestions";
 import styled from "styled-components";
 const Main = () => {
   const navigate = useNavigate();
@@ -29,7 +28,6 @@ const Main = () => {
       {isStart && <StartView />}
       <Routes>
         {/* 프롭으로 데이터 준다 */}
-        <Route path="/:3" element={<StartQuestions />} />
         <Route path="/:3/result" element={<div>result</div>} />
       </Routes>
     </StyledMain>
