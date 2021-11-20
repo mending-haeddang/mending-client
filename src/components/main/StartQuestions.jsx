@@ -2,10 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import ShowQuestion from "./ShowQuestion";
 import InputQuestion from "./InputQuestion";
+import fire from "../../assets/images/fire.gif";
 //프롭으로 데이터 받는다
 const StartQuestions = () => {
   return (
     <StyledStartQuestions>
+      <img src={fire} />
       <ShowQuestion />
       <InputQuestion />
     </StyledStartQuestions>
@@ -32,4 +34,13 @@ const StyledStartQuestions = styled.div`
   }
 
   animation: fadeIn 2s ease;
+
+  img {
+    width: 331px;
+    height: 440px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
 `;
