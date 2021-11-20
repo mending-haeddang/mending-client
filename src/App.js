@@ -7,6 +7,7 @@ import Result from "./pages/Result";
 import Layout from "./components/common/Layout";
 import Header from "./components/common/Header";
 import StartQuestions from "./components/main/StartQuestions";
+import Main from "./pages/Main";
 function App() {
   return (
     <>
@@ -17,8 +18,9 @@ function App() {
             <Route path="/" element={<Intro />} />
             <Route path="/create" element={<Create />} />
             <Route path="/join" element={<Join />} />
-            <Route path="/result/:id" element={<Result />} />
+            <Route path="/main" element={<Main />} />
             <Route path="/main/:id" element={<StartQuestions />} />
+            <Route path="/result/:id" element={<Result />} />
             <Route path="/ending" element={<Ending />} />
           </Routes>
         </Layout>
