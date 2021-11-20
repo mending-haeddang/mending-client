@@ -4,7 +4,7 @@ const ShowQuestion = ({ data }) => {
   const { id } = useParams();
   let name = id.replace(":", "");
   name = parseInt(name, 10);
-  console.log(data[name]);
+  console.log("hi");
   return <StyledShowQuestion>{data[name].question}</StyledShowQuestion>;
 };
 
