@@ -22,7 +22,7 @@ const StyledStartQuestions = styled.div`
   align-items: center;
   position: relative;
 
-  @keyframes fade {
+  @keyframes fadeIn {
     from {
       opacity: 0;
     }
@@ -31,5 +31,5 @@ const StyledStartQuestions = styled.div`
     }
   }
 
-  animation: fade 2s ease;
+  animation: fadeIn 2s ease;
 `;
