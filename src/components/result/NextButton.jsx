@@ -18,6 +18,7 @@ const StyledNextButton = styled.button`
   font-size: 24px;
   margin-bottom: 100px;
   font-family: "Spoqa Han Sans Neo";
+  z-index: 2;
   &:hover {
     cursor: pointer;
   }
