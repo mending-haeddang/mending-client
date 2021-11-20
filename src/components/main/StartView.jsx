@@ -38,7 +38,7 @@ const StyledStartView = styled.div`
     }
   }
 
-  animation: fade 9s ease;
+  animation: fade 6s ease;
 
   div {
     width: 370px;

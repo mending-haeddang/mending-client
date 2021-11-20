@@ -12,7 +12,7 @@ const Main = () => {
     setTimeout(() => {
       setIsStart(false);
       navigate("./:3");
-    }, 8500);
+    }, 5500);
   };
 
   useEffect(() => {

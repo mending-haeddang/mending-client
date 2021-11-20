@@ -31,5 +31,5 @@ const StyledStartQuestions = styled.div`
     }
   }
 
-  animation: fade 3.2s ease;
+  animation: fade 2s ease;
 `;
