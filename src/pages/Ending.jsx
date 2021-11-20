@@ -1,7 +1,14 @@
 import React from "react";
+import Title from "../components/ending/Title";
+import Button from "../components/ending/Button";
 
 const Ending = () => {
-  return <div></div>;
+  return (
+    <>
+      <Title />
+      <Button />
+    </>
+  );
 };
 
 export default Ending;
