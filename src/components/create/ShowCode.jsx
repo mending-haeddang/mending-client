@@ -3,12 +3,24 @@ import styled from "styled-components";
 import colors from "../../libs/constant/colors";
 
 const ShowCode = () => {
+  const code = "GJD3890";
+  const handlerClick = () => {
+    navigator.clipboard
+      .writeText(code)
+      .then(() => {
+        console.log("Text copied.");
+        alert("클립보드에 복사되었습니다.");
+      })
+      .catch(() => {
+        console.log("Failed to copy text.");
+      });
+  };
   return (
     <StyledWrap>
       <StyledCodeWrap>
         <span>멜팅 코드</span>
-        <StyledCode>GJD3890</StyledCode>
-        <StyledBtn>복사</StyledBtn>
+        <StyledCode>{code}</StyledCode>
+        <StyledBtn onClick={handlerClick}>복사</StyledBtn>
       </StyledCodeWrap>
       <StyledTextDiv>
         <p>멜팅 코드를 친구들에게 공유해주세요!</p>
