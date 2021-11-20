@@ -1,18 +1,18 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 // import axios from "axios";
-import { Routes, Route } from "react-router";
+import { Routes, Route, useNavigate } from "react-router";
 import StartView from "../components/main/StartView";
 import StartQuestions from "../components/main/StartQuestions";
 import styled from "styled-components";
 const Main = () => {
-  // const navigate = useNavigate();
-  // const [isStart, seㅊ tIsStart] = useState(true);
+  const navigate = useNavigate();
+  const [isStart, setIsStart] = useState(true);
 
   const renderStartView = () => {
     setTimeout(() => {
-      // setIsStart(false);
-      // navigate("./:3");
-    }, 3000);
+      setIsStart(false);
+      navigate("./:3");
+    }, 8500);
   };
 
   useEffect(() => {
@@ -26,7 +26,7 @@ const Main = () => {
 
   return (
     <StyledMain>
-      <StartView />
+      {isStart && <StartView />}
       <Routes>
         {/* 프롭으로 데이터 준다 */}
         <Route path="/:3" element={<StartQuestions />} />

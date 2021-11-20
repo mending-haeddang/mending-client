@@ -6,9 +6,9 @@ const StartView = () => {
       <div>
         모든 분들이 오셨어요!
         <br />
-        멜팅될 준비 되셨나요?
+        멜팅 될 준비 되셨나요?
       </div>
-      <div>곧 질문이 나올거에요</div>
+      <div>곧 질문을 드릴게요</div>
     </StyledStartView>
   );
 };
@@ -16,7 +16,7 @@ const StartView = () => {
 export default StartView;
 
 const StyledStartView = styled.div`
-  width: 50%;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -24,15 +24,21 @@ const StyledStartView = styled.div`
   position: relative;
 
   @keyframes fade {
-    from {
+    0% {
+      opacity: 0;
+    }
+    33% {
       opacity: 1;
     }
-    to {
+    66% {
+      opacity: 1;
+    }
+    100% {
       opacity: 0;
     }
   }
 
-  animation: fade 1.2s ease 2s;
+  animation: fade 9s ease;
 
   div {
     width: 370px;
@@ -47,8 +53,10 @@ const StyledStartView = styled.div`
     position: absolute;
     display: flex;
     align-items: center;
+    justify-content: center;
   }
   div:last-child {
-    bottom: 0;
+    height: 48px;
+    bottom: 129px;
   }
 `;

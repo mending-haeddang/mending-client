@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import logo from "../../assets/images/lettering_white.svg";
+import Logo from "../../assets/images/lettering_white.svg";
 const Header = () => {
   return (
     <StyledHeader>
-      <img src={logo} />
+      <img src={Logo} />
     </StyledHeader>
   );
 };
