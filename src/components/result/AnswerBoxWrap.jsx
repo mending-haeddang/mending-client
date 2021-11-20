@@ -14,9 +14,9 @@ const AnswerBoxWrap = ({ answers }) => {
 };
 
 const StyledAnswerBoxWrap = styled.div`
-  width: 800px;
-  height: 400px;
-  border: 1px solid black;
+  width: 100vw;
+  height: 642px;
+  box-sizing: border-box;
 `;
 
 export default AnswerBoxWrap;

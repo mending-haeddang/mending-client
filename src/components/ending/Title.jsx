@@ -12,6 +12,25 @@ const Title = () => {
 
 const StyledTitle = styled.div`
   font-weight: bold;
+  font-size: 40px;
+  margin-top: 60px;
+  color: white;
+  animation-name: fadein;
+  animation-duration: 3s;
+
+  p {
+    margin: 0;
+    text-align: center;
+  }
+
+  @keyframes fadein {
+    from {
+      opacity: 0.1;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 `;
 
 export default Title;
