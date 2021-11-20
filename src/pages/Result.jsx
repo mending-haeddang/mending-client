@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Question from "../components/result/Question";
 import AnswerBoxWrap from "../components/result/AnswerBoxWrap";
 import NextButton from "../components/result/NextButton";
 import styled from "styled-components";
+import { getAnswers } from "../libs/api";
 
 const Result = () => {
+  useEffect(() => {
+    (async () => {
+      const data = await getAnswers();
+      console.log(data);
+    })();
+  }, []);
+
   const answers = [
     { name: "person1", answer: "발리에서 스쿠버 다이빙을 하고 싶어요." },
     { name: "person2", answer: "hello" },
