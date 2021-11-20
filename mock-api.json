@@ -1,0 +1,52 @@
+{
+  "leader": {
+    "message": "팀원 다 들어왔다 !",
+    "data": [
+      {
+        "question_id": 0,
+        "question": "당신의 MBTI는?"
+      },
+      {
+        "question_id": 1,
+        "question": "당신의 혈액형은?"
+      },
+      {
+        "question_id": 2,
+        "question": "당신의 나이는?"
+      },
+      {
+        "question_id": 3,
+        "question": "당신의 특기는?"
+      },
+      {
+        "question_id": 4,
+        "question": "당신의 흥미는?"
+      }
+    ]
+  },
+  "melting": {
+    "message": "",
+    "data": [
+      {
+        "name": "서현",
+        "answer": "enfp입니다"
+      },
+      {
+        "name": "정현",
+        "answer": "enfp입니다"
+      },
+      {
+        "name": "세연",
+        "answer": "enfp입니다"
+      },
+      {
+        "name": "희선",
+        "answer": "enfp입니다"
+      },
+      {
+        "name": "소희",
+        "answer": "enfp입니다"
+      }
+    ]
+  }
+}
