@@ -16,6 +16,16 @@ const StyledNextButton = styled.button`
   font-size: 24px;
   margin-bottom: 100px;
   font-family: "Spoqa Han Sans Neo";
+
+  @keyframes fadeButton {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  animation: fadeButton 0.6s;
 `;
 
 export default NextButton;
