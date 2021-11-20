@@ -6,12 +6,16 @@ const Button = () => {
 };
 
 const StyledButton = styled.button`
-  width: 160px;
-  height: 30px;
-  border-radius: 15px;
+  width: 190px;
+  height: 46px;
+  border-radius: 23px;
   border: none;
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
+  margin-top: 603px;
+  font-weight: bold;
+  font-size: 24px;
+  font-family: "Spoqa Han Sans Neo";
 `;
 
 export default Button;

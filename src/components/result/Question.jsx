@@ -7,8 +7,10 @@ const Question = ({ text = "question" }) => {
 
 const StyledQuestion = styled.p`
   margin: 0;
-  font-size: 24px;
+  margin-top: 61px;
+  font-size: 40px;
   font-weight: bold;
+  color: white;
 `;
 
 export default Question;

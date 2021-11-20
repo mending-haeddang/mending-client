@@ -7,12 +7,15 @@ const NextButton = () => {
 
 const StyledNextButton = styled.button`
   border: none;
-  background-color: black;
-  color: white;
-  width: 100px;
-  height: 40px;
-  border-radius: 20px;
-  margin-top: 20px;
+  background-color: white;
+  color: black;
+  width: 129px;
+  height: 46px;
+  border-radius: 23px;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 121px;
+  font-family: "Spoqa Han Sans Neo";
 `;
 
 export default NextButton;

@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 
 const AnswerBox = ({ index, ans, pos }) => {
-  console.log(index);
   const { name, answer } = ans;
   return (
     <StyledAnswerBox pos={pos} index={index}>
@@ -13,15 +12,15 @@ const AnswerBox = ({ index, ans, pos }) => {
 };
 
 const StyledAnswerBox = styled.div`
-  width: 200px;
-  height: 50px;
-  border: 1px solid black;
-  border-radius: 20px;
+  width: 391px;
+  height: 134px;
+  border-radius: 67px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.5);
   animation-duration: 5s;
   animation-name: popup;
   animation-delay: ${(props) => props.index}s;
@@ -31,13 +30,20 @@ const StyledAnswerBox = styled.div`
   left: ${(props) => props.pos.x}px;
   top: ${(props) => props.pos.y}px;
   p {
-    margin: 0;
+    margin: 0 60px;
   }
   p:first-child {
-    font-weight: bold;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 5px;
+    margin-top: -3px;
   }
   p:last-child {
-    color: gray;
+    font-weight: bold;
+    font-size: 30px;
+    word-break: keep-all;
+    text-align: center;
+    line-height: 1.2;
   }
 
   @keyframes popup {
