@@ -3,7 +3,9 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
 import StartView from "../components/main/StartView";
 import styled from "styled-components";
+import fire from "../assets/images/fire.gif";
 import { getQuestions } from "../libs/api";
+
 const Main = () => {
   const navigate = useNavigate();
   const [isStart, setIsStart] = useState(true);
@@ -23,7 +25,12 @@ const Main = () => {
     })();
   }, []);
 
-  return <StyledMain>{isStart && <StartView />}</StyledMain>;
+  return (
+    <StyledMain>
+      <img src={fire} />
+      {isStart && <StartView />}
+    </StyledMain>
+  );
 };
 
 export default Main;
@@ -34,4 +41,14 @@ const StyledMain = styled.div`
   color: white;
   display: flex;
   justify-content: center;
+  position: relative;
+
+  img {
+    width: 331px;
+    height: 440px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
 `;
