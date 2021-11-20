@@ -1,14 +1,18 @@
 import React, { useState } from "react";
 import ChooseCreate from "../components/intro/ChooseCreate";
-// import InputName from "../components/intro/InputName";
+import InputName from "../components/intro/InputName";
 import styled from "styled-components";
 
 const Intro = () => {
   const [userName, setUserName] = useState("");
+  const [isComplete, setIsComplete] = useState(false);
   return (
     <StyledWrap>
-      {/* <InputName userName={userName} setUserName={setUserName} /> */}
-      <ChooseCreate userName={userName} setUserName={setUserName} />
+      {isComplete ? (
+        <ChooseCreate userName={userName} />
+      ) : (
+        <InputName userName={userName} setUserName={setUserName} setIsComplete={setIsComplete} />
+      )}
     </StyledWrap>
   );
 };
@@ -21,5 +25,4 @@ const StyledWrap = styled.div`
   align-items: center;
   width: 100%;
   height: 100%;
-  background-color: #24212d;
 `;

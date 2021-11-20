@@ -1,13 +1,13 @@
-import React from "react";
-// import InputTeamNum from "../components/create/InputTeamNum";
+import React, { useState } from "react";
+import InputTeamNum from "../components/create/InputTeamNum";
 import ShowCode from "../components/create/ShowCode";
 import styled from "styled-components";
 
 const Create = () => {
+  const [isComplete, setIsComplete] = useState(false);
   return (
     <StyledWrap>
-      {/* <InputTeamNum></InputTeamNum> */}
-      <ShowCode></ShowCode>
+      {isComplete ? <ShowCode></ShowCode> : <InputTeamNum setIsComplete={setIsComplete}></InputTeamNum>}
     </StyledWrap>
   );
 };
@@ -20,5 +20,4 @@ const StyledWrap = styled.div`
   align-items: center;
   width: 100%;
   height: 100%;
-  background-color: #24212d;
 `;
