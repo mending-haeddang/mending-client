@@ -1,35 +1,34 @@
 import React, { useEffect, useState } from "react";
 // import axios from "axios";
-import { Routes, Route, useNavigate } from "react-router";
+import { useNavigate } from "react-router";
 import StartView from "../components/main/StartView";
 import styled from "styled-components";
+import fire from "../assets/images/fire.gif";
+import { getQuestions } from "../libs/api";
+
 const Main = () => {
   const navigate = useNavigate();
   const [isStart, setIsStart] = useState(true);
 
-  const renderStartView = () => {
+  const renderStartView = (data) => {
     setTimeout(() => {
       setIsStart(false);
-      navigate("./:3");
+      navigate("./:0", { state: data });
     }, 5500);
   };
 
   useEffect(() => {
-    const getMembersInfo = async () => {
-      // const data = await axios.get("aaaa");
-    };
-
-    getMembersInfo();
-    renderStartView();
+    (async () => {
+      const { data } = await getQuestions();
+      console.log(data);
+      renderStartView(data);
+    })();
   }, []);
 
   return (
     <StyledMain>
+      <img src={fire} />
       {isStart && <StartView />}
-      <Routes>
-        {/* 프롭으로 데이터 준다 */}
-        <Route path="/:3/result" element={<div>result</div>} />
-      </Routes>
     </StyledMain>
   );
 };
@@ -42,4 +41,14 @@ const StyledMain = styled.div`
   color: white;
   display: flex;
   justify-content: center;
+  position: relative;
+
+  img {
+    width: 331px;
+    height: 440px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
 `;

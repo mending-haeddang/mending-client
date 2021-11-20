@@ -1,8 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import loading from "../../assets/images/loading.gif";
 import colors from "../../libs/constant/colors";
+import { useNavigate } from "react-router";
+
 const Loading = () => {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    setTimeout(() => {
+      navigate("/main");
+    }, 3000);
+  }, []);
+
   return (
     <StyledWrap>
       <img src={loading}></img>
