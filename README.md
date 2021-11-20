@@ -1,4 +1,16 @@
-# ⭐ Mending Web Frontend ⭐
+# ⭐ 멜팅(Melting) ⭐
+
+
+### 서비스 한 줄 소개
+**: 아이스한 분위기 멜팅으로 녹여봐요 🧊 🔥**
+
+처음 만난 사람들이 어색한 분위기를 풀고 싶을 때,
+아이스 브레이킹을 위한 질문과 답변 공간을 제공한다.
+
+### 개발 담당 부분
+- 희선: Intro, Create, Join
+- 세연: Main
+- 소희: Result, Ending
 
 ### Tech
 ![react](https://img.shields.io/badge/-react-58c3ff?labelColor=white&logo=React)
@@ -12,7 +24,7 @@
 - react-router-dom v.6
 - 컴포넌트는 화살표 함수로 선언
 - props는 구조분해할당 객체로 받아오기
-- event handler 함수는 eventHandler 형식으로 선언
+- event handler 함수는 HandleEvent 형식으로 선언
 - styled-components는 className 없이 선택자만으로 사용
 - styled-components의 이름은 StyledComponent 형식으로 사용
 - 변수, 폴더명, 컴포넌트가 아닌 js 파일은 camelCase로 선언
